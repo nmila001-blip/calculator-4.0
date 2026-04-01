@@ -1,1 +1,88 @@
-
+<!doctype html>
+<html>
+<head>
+  <title>calculator 3.0</title>
+  <style>
+   button{
+        background-color:gray;
+        border-radius:15px;
+        color:black;
+        font-size:20px;
+        text-align:center;
+        padding:25px 25px;
+        margin-bottom:7.5px;
+        font-family: Arial, sans-serif;
+        line-height:1;
+        }
+        button:hover{
+            background-color:black;
+            transform: scale(1.1);
+            color:white;
+            cursor:pointer;
+        }
+        #display{
+            width:500px;
+            height:75px;
+            grid-column:span 4;
+            font-size:40px;
+            border-color:lightgray;
+            text-align:right;
+        }
+        body{
+        font-family: Arial, sans-serif;
+        background-color:white;
+        text-align:center;
+        margin-top:75px;
+        background-color:lightgray;
+        border:10px;
+        border-color:darkgray;        }
+.calculator{
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(6,80px);
+    grid-gap: 10px;
+    justify-content: center;
+    padding: 20px;
+    background: lightgray;
+    border-radius: 10px;
+    margin:0 auto;
+}
+.clear{
+grid-column:span 4;
+}
+  </style>
+  </head>
+  <body>
+      <h1>calculator 3.0</h1>
+      <input id="display" type="text">
+    <div class="calculator">
+    <button class="symbols">√</button>
+    <button class="symbols">**</button>
+    <button class="symbols">%</button>
+    <button class="backspace">⌫</button>
+    <button class="number">7</button>
+    <button class="number">8</button>
+    <button class="number">9</button>
+    <button class="symbols">/</button>
+    <button class="number">4</button>
+    <button class="number">5</button>
+    <button class="number">6</button>
+    <button class="symbols">*</button>
+    <button class="number">1</button>
+    <button class="number">2</button>
+    <button class="number">3</button>
+    <button class="symbols">-</button>
+    <button class="number">0</button>
+    <button class="symbols">.</button>
+    <button class="equals">=</button>
+    <button class="symbols">+</button>
+    <button class="clear">C</button>
+    </div>
+    <script>
+         const display = document.getElementById("display");
+       if(button === "9"){
+         display.value = 9;
+       }
+    </script>
+</body>
+</html>
