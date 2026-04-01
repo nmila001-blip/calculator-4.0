@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>calculator 3.0</title>
+  <title>calculator 4.0</title>
   <style>
    button{
         background-color:gray;
@@ -80,9 +80,9 @@ grid-column:span 4;
     </div>
     <script>
          const display = document.getElementById("display");
-       if(button === "9"){
-         display.value = 9;
-       }
+      button.addEventListener("click" ,() =>{
+        display.value = button.textcontent;
+        )};
     </script>
 </body>
 </html>
